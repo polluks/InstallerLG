@@ -1,0 +1,1 @@
+script: make -C build && make -C build test
