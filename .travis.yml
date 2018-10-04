@@ -2,3 +2,8 @@ language: c
 script: make -C build && make -C build test
 env:
   - VALGRIND_OPTS='--leak-check=full --track-origins=yes'
+
+addons:
+  apt:
+    packages:
+      - valgrind
